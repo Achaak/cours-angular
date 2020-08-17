@@ -12,3 +12,14 @@ npm install -g @angular/cli
 ng new mon-premier-projet
 ng serve
 ```
+
+## PWA
+```
+ng add @angular/pwa
+npm install lite-server --save-dev
+```
+
+Ajouter au package.json
+```
+"start:prod": "ng build --prod && lite-server --baseDir dist/nomDeVotreApplication",
+```
